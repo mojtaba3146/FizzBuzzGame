@@ -8,26 +8,25 @@ namespace FizzBuzz
 {
     public class BuzzFizz
     {
-        public string FBGame()
+        public string FBGame(int number)
         {
-            for (int i = 0; i < 1000; i++)
-            {
-                if (i % 3 == 0)
+            
+                if (number % 3 == 0)
                 {
                     return "fizz";
                 }
 
-                else if (i % 5 == 0)
+                else if (number % 5 == 0)
                 {
                     return "buzz";
                 }
 
-                else if (i % 5 == 0 && i % 3 == 0)
+                else if (number % 5 == 0 && number % 3 == 0)
                 {
                     return "FizzBuzz";
                 }
-            }
-            return "Invali";
+            
+            return "Invalid";
         }
     }
 }
