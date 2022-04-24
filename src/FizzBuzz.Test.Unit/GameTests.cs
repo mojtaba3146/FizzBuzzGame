@@ -19,13 +19,33 @@ namespace FizzBuzz.Test.Unit
         }
 
         [Fact]
-        public void Shoud_Divisible_By_3()
+        public void IF_Divisible_By_3_Say_Fizz()
         {
             int num = 3;
 
-            var expected = _sut.FBGame(num);
+            var expected = _sut.GameCheckDivisible(num);
 
             expected.Should().Be("fizz");
+        }
+
+        [Fact]
+        public void IF_Divisible_By_5_Say_Buzz()
+        {
+            int num = 5;
+
+            var expected = _sut.GameCheckDivisible(num);
+
+            expected.Should().Be("buzz");
+        }
+
+        [Fact]
+        public void IF_Divisible_By_3_And_5_Say_FizzBuzz()
+        {
+            int num = 15;
+
+            var expected = _sut.GameCheckDivisible(num);
+
+            expected.Should().Be("FizzBuzz");
         }
     }
 }

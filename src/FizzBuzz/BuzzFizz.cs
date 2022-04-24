@@ -8,25 +8,27 @@ namespace FizzBuzz
 {
     public class BuzzFizz
     {
-        public string FBGame(int number)
+        public string GameCheckDivisible(int number)
         {
-            
-                if (number % 3 == 0)
-                {
-                    return "fizz";
-                }
+            if (number % 5 == 0 && number % 3 == 0)
+            {
+                return "FizzBuzz";
+            }
 
-                else if (number % 5 == 0)
-                {
-                    return "buzz";
-                }
+            else if (number % 3 == 0)
+            {
+                return "fizz";
+            }
 
-                else if (number % 5 == 0 && number % 3 == 0)
-                {
-                    return "FizzBuzz";
-                }
-            
-            return "Invalid";
+            else if (number % 5 == 0)
+            {
+                return "buzz";
+            }
+
+
+
+            return "";
+
         }
     }
 }
