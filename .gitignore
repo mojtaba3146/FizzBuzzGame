@@ -350,6 +350,8 @@ MigrationBackup/
 .ionide/
 *.user
 *.ncrunchsolution
+*.v3.ncrunchsolution
+*.v3.ncrunchsolution.user
 
 FizzBuzzGame.v3.ncrunchsolution.user
 FizzBuzzGame.v3.ncrunchsolution
