@@ -349,5 +349,7 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 *.user
+*.ncrunchsolution
 
 FizzBuzzGame.v3.ncrunchsolution.user
+FizzBuzzGame.v3.ncrunchsolution
